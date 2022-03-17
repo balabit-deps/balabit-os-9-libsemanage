@@ -1,0 +1,15 @@
+Description: Use python3 for semanage_migrate_store
+Author: Laurent Bigonville <bigon@debian.org>
+Forwarded: not-needed
+
+--- a/utils/semanage_migrate_store
++++ b/utils/semanage_migrate_store
+@@ -13,7 +13,7 @@
+     import selinux
+     import semanage
+ except ImportError:
+-    print("You must install libselinux-python and libsemanage-python before running this tool", file=sys.stderr)
++    print("You must install python3-selinux and python3-semanage before running this tool", file=sys.stderr)
+     exit(1)
+ 
+ 
